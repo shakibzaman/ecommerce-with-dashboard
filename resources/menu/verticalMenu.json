@@ -1,0 +1,246 @@
+{
+  "menu": [
+    {
+      "name": "Suppliers",
+      "icon": "menu-icon fas fa-fw fa-people-group",
+      "slug": "suppliers",
+      "can": "supplier-module",
+      "submenu": [
+        {
+          "url": "suppliers",
+          "name": "Suppliers",
+          "slug": "suppliers.index",
+          "can": "supplier-list"
+        },
+        {
+          "url": "supplier/invoice",
+          "name": "Add Product",
+          "slug": "supplier.invoice",
+          "can": "stock-add"
+        },
+        {
+          "url": "supplier/invoice/list",
+          "name": "Orders",
+          "slug": "suppliers-invoices-list",
+          "can": "supplier-order"
+        }
+      ]
+    },
+    {
+      "name": "Wholesaler",
+      "icon": "menu-icon fas fa-fw fa-people-line",
+      "slug": "wholesalers",
+      "can": "wholesaler-module",
+      "submenu": [
+        {
+          "url": "wholesalers",
+          "name": "Wholesalers",
+          "slug": "wholesalers.index",
+          "can": "wholesaler-list"
+        },
+        {
+          "url": "wholesaler/invoice",
+          "name": "Sell Product",
+          "slug": "wholesalers-invoice",
+          "can": "wholesaler-pos"
+        },
+        {
+          "url": "wholesaler/orders",
+          "name": "Orders",
+          "slug": "wholesalers-order-list",
+          "can": "wholesaler-order"
+        }
+      ]
+    },
+    {
+      "name": "Stuff Management",
+      "icon": "menu-icon fas fa-fw fa-people-line",
+      "slug": "stuffs",
+      "can": "admin-module",
+      "submenu": [
+        {
+          "url": "stuffs",
+          "name": "List",
+          "can": "admin-module",
+          "slug": "stuffs"
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "icon": "menu-icon fas fa-fw fa-heart",
+      "slug": "layouts",
+      "can": "product-module",
+
+      "submenu": [
+        {
+          "url": "products",
+          "name": "Products",
+          "slug": "products",
+          "can": "product-list"
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "icon": "menu-icon fas fa-fw fa-cart-shopping",
+      "slug": "layouts",
+      "can": "order-module",
+
+      "submenu": [
+        {
+          "url": "orders",
+          "name": "Orders",
+          "slug": "orders",
+          "can": "order-list"
+        },
+        {
+          "url": "create/orders",
+          "name": "Create Order",
+          "slug": "create/orders",
+          "can": "order-create"
+        },
+        {
+          "url": "create/courier/sheet",
+          "name": "Courier Sheet",
+          "slug": "create/courier/sheet",
+          "can": "order-courier-sheet"
+        },
+        {
+          "url": "import/payment/sheet",
+          "name": "Payment",
+          "slug": "create.import.payment.order.csv",
+          "can": "order-payment"
+        }
+      ]
+    },
+    {
+      "name": "Site Settings",
+      "icon": "menu-icon fas fa-fw fa-cog",
+      "slug": "site_settings",
+      "can": "setting-module",
+      "submenu": [
+        {
+          "url": "categories",
+          "name": "Category",
+          "slug": "categories"
+        },
+        {
+          "url": "units",
+          "name": "Units",
+          "slug": "units"
+        },
+        {
+          "url": "statuses",
+          "name": "Status",
+          "slug": "statuses"
+        },
+        {
+          "url": "delivery_companies",
+          "name": "Delivery Company",
+          "slug": "delivery_companies"
+        },
+        {
+          "url": "sliders",
+          "name": "Sliders",
+          "slug": "sliders"
+        },
+        {
+          "url": "global_settings",
+          "name": "Global Settings",
+          "slug": "global_settings",
+          "icon": "fas fa-spinner"
+        }
+      ]
+    },
+    {
+      "name": "User Behave",
+      "icon": "menu-icon fas fa-fw fa-user-secret",
+      "slug": "userBehave",
+      "can": "userBehave-module",
+      "submenu": [
+        {
+          "url": "/online-user",
+          "name": "Who's Online",
+          "slug": "userBehave-online-user",
+          "icon": "fas fa-sliders-h"
+        },
+        {
+          "url": "activity-log",
+          "name": "Account Activity",
+          "slug": "userBehave-activity-log",
+          "icon": "fas fa-spinner"
+        }
+      ]
+    },
+    {
+      "name": "Expense",
+      "icon": "menu-icon fas fa-fw fa-user-secret",
+      "slug": "exoense",
+      "can": "expense-module",
+      "submenu": [
+        {
+          "url": "/expense_categories",
+          "name": "Categorye",
+          "slug": "userBehave-online-user",
+          "icon": "fas fa-sliders-h",
+          "can": "expense-category"
+        },
+        {
+          "url": "expenses",
+          "name": "Expenses",
+          "slug": "userBehave-activity-log",
+          "icon": "fas fa-spinner",
+          "can": "expense-list"
+        }
+      ]
+    },
+    {
+      "name": "Loging Info",
+      "icon": "menu-icon fas fa-fw fa-mobile",
+      "slug": "logingInfo",
+      "can": "login-info",
+      "submenu": [
+        {
+          "url": "/admin-login-log",
+          "name": "Admin Loging Info",
+          "slug": "logingInfo-adminLoging-Log",
+          "icon": "fas fa-sliders-h"
+        },
+        {
+          "url": "/customer-login-log",
+          "name": "User Loging Info",
+          "slug": "logingInfo-customerLoging-Log",
+          "icon": "fas fa-spinner"
+        }
+      ]
+    },
+    {
+      "name": "User Role Permission",
+      "icon": "menu-icon fas fa-fw fa-user",
+      "slug": "layouts",
+      "can": "user-roll-permission",
+      "submenu": [
+        {
+          "url": "roles",
+          "name": "Roles",
+          "slug": "roles",
+          "can": "role-list"
+        },
+        {
+          "url": "permissions",
+          "name": "Permissions",
+          "slug": "permissions",
+          "can": "permission-list"
+        },
+        {
+          "url": "users",
+          "name": "User",
+          "slug": "users",
+          "icon": "fas fa-user",
+          "can": "user-list"
+        }
+      ]
+    }
+  ]
+}
